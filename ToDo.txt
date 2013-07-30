@@ -1,0 +1,1 @@
+add Point to drawing area
