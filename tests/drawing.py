@@ -3,7 +3,7 @@ Created on Jul 28, 2013
 
 @author: student
 '''
-from PyQt4 import QtGui, Qt
+from PyQt4 import QtGui
 
 
 

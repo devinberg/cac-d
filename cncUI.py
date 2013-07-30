@@ -9,6 +9,7 @@
 
 from PyQt4 import QtCore, QtGui
 import imageCapture
+import cncBase
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8  # @UndefinedVariable
@@ -16,6 +17,13 @@ except AttributeError:
     _fromUtf8 = lambda s: s
 
 class Ui_MainWindow(object):
+    cncBase = None
+
+    def __init__(self, cncBase, *args, **kwargs):
+        return object.__init__(self, *args, **kwargs)
+
+    
+    
     def captureImage(self):
         window = QtGui.QDialog()
         GUI = imageCapture.Ui_CaptureImageBox()
