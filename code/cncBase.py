@@ -30,6 +30,7 @@ class cncBase(object):
         self._name_ = "cncBase"
        
     
+    
     def getDrawingObjects(self):
         return self.drawingObjects
     

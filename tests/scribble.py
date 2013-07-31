@@ -112,11 +112,13 @@ class ScribbleArea(QtGui.QWidget):
 #       print "event.pos() = %s" % event.pos()
         if event.button() == QtCore.Qt.LeftButton:
             self.lastPoint = event.pos()
+            print(self.lastPoint)
             self.scribbling = True
 
     def mouseMoveEvent(self, event):
         if (event.buttons() & QtCore.Qt.LeftButton) and self.scribbling:
             self.drawLineTo(event.pos())
+            print("moving")
 
     def mouseReleaseEvent(self, event):
         if event.button() == QtCore.Qt.LeftButton and self.scribbling:
